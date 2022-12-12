@@ -1,8 +1,51 @@
+@font-face{
+    font-family:OdinFont;
+    src:url("./Norse-Bold.otf") format("opentype");
+}
+
 *{
     margin:0;
     padding:0;
+    background:black;
+}
+
+.container{
+    display:flex;
+    margin-left:auto;
+    color:white;
+    justify-content: center;
 }
 img{
-    width:500px;
+    width:550px;
     height:100vh;
+}
+.box{
+    width:850px;
+    display:flex;
+    flex-direction:column;
+    padding:20vh 0;
+    background:white;
+    border:solid 5px orange;
+    height:100vh;
+}
+p{
+    font-size:23px;
+    font-family:sans-serif;
+    font-weight:700;
+    margin-bottom: 5vh;
+}
+.field{
+    height:auto;
+    width:auto;
+}
+.first-row, .second-row, .third-row{
+    display:flex;
+    justify-content:left;
+    padding: 0 5vh;
+}
+p, span, a, h3{
+    padding:0 5vh;
+}
+button{
+    margin:0 5vh;
 }
