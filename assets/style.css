@@ -16,16 +16,21 @@
     justify-content: center;
     font-family:sans-serif;
 }
-img{
+.img{
     width:550px;
     height:100vh;
 }
+.logo{
+    position:fixed;
+    width:100px;
+    margin: 23vh 0 0 13vh;
+}
 .box-text{
     position:fixed;
-    font-size:60px;
+    font-size:92px;
     color:white;
     font-family:OdinFont;
-    margin-top:24vh;
+    margin:24vh;
 }
 .text-box{
     position:fixed;
@@ -52,6 +57,7 @@ p{
 fieldset{
     background:white;
     border:0;
+    box-shadow: 2px 4px 10px;
 }
 .first-row, .second-row, .third-row{
     display:flex;
@@ -62,7 +68,7 @@ p, span, a, h3{
     padding:0 5vh;
 }
 button{
-    margin:0 5vh;
+    margin:3vh 5vh 1vh 5vh;
     background:#596D48;
     padding: 1.5vh 4vw;
     border-radius:1vh;
@@ -73,14 +79,19 @@ button{
 h3{
     font-size:20px;
     font-weight:600;
-    margin-bottom:15px;
+    margin:15px 0 15px 0;
 }
 label{
     font-size:12px;
-    margin:0 40px;
 }
 input{
     font-size:22px;
-    margin:25px 40px;
-    border:0;
+    margin:5px 40px 25px 0px;
+    border:#E5E7EB solid 1px;
+}
+input:invalid{
+    border:2px solid red;
+}
+fieldset[data-error] div .input{
+    border:2px solid red;
 }

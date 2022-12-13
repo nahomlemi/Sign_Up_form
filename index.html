@@ -10,11 +10,10 @@
 <body>
     <div class="container">
         <div>
-            <div>
-                <h2 class="box-text">ODIN</h2>
-                <div class="text-box"></div>
-            </div>
-            <img src="./assets/halie-west-25xggax4bSA-unsplash.jpg" alt="background_image" />
+            <div class="text-box"></div>
+            <h2 class="box-text">ODIN</h2>
+            <img src="./assets/odin-lined.png" alt="logo" class = "logo"/>
+            <img src="./assets/halie-west-25xggax4bSA-unsplash.jpg" alt="background_image" class="img" />
         </div>
         <form action="" method ="POST">
             <div class="form">
@@ -24,47 +23,48 @@
                     You know you want to.
                 </p>
                 
-                <fieldset class = "field">
+                <fieldset class = "field" data-error = "Invalid Input">
                     <h3>
                         Let's do this!
                     </h3>
                     <div class="first-row">
                         <div class="first-row-left">
                             <label for = "first-name">FIRST NAME</label><br>
-                            <input type="text" id = "first-name" name>
+                            <input type="text" id = "first-name" name required>
                         </div>
                         <div class="first-row-last">
                             <label for = "last-name">LAST NAME</label><br>
-                            <input type="text" id = "last-name" name>
+                            <input type="text" id = "last-name" name required>
                         </div>
                     </div>
                     <div class="second-row">
                         <div class="second-row-left">
                             <label for="email">EMAIL</label><br>
-                            <input type = "email" id = "email"/>
+                            <input type = "email" id = "email" required/>
                         </div>
                         <div class="second-row-right">
                             <label for= "tel" name="phone-number">PHONE NUMBER</label><br>
-                            <input type="tel" id="tel">
+                            <input type="number" id="tel" required>
                         </div>
                     </div>
                     <div class="third-row">
                         <div class="second-row-left">
-                            <label for= "password" name="phone-number">PASSWORD</label><br>
-                            <input type="password" id="password"">
+                            <label for= "password" name="password">PASSWORD</label><br>
+                            <input type="password" id="password" required>
                         </div>
                         <div class="second-row-right">
                             <label for="confirm-password">CONFIRM PASSWORD</label><br>
-                            <input type="password" id="confirm-password">
+                            <input type="password" id="confirm_password" required>
                         </div>
                     </div>
-                    <div class="fourth-row">
-                        <button type = "submit">Create Account</button>
-                    </div>    
                 </fieldset>
+                <div class="fourth-row">
+                    <button type = "submit">Create Account</button>
+                </div>    
                 <span>Already have an account?</span><a href="https://www.google.com">Log In</a>
             </div>
         </form>
     </div>
 </body>
+<script src="./assets/app.js"></script>
 </html>
