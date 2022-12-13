@@ -92,6 +92,11 @@ input{
 input:invalid{
     border:2px solid red;
 }
+input:focus{
+    border:3px solid blue;
+    outline:0;
+}
+
 fieldset[data-error] div .input{
     border:2px solid red;
 }
